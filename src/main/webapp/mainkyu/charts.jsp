@@ -16,7 +16,7 @@
   <title>HWABO</title>
 
   <!-- Custom fonts for this template-->
-  <link href="../resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../resources/maincss/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
@@ -93,15 +93,15 @@
       </li>
 
       <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
           <span>Utilities</span>
         </a>
-        <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item active" href="utilities-color.jsp">Colors</a>
+            <a class="collapse-item" href="utilities-color.jsp">Colors</a>
             <a class="collapse-item" href="utilities-border.jsp">Borders</a>
             <a class="collapse-item" href="utilities-animation.jsp">Animations</a>
             <a class="collapse-item" href="utilities-other.jsp">Other</a>
@@ -138,7 +138,7 @@
       </li>
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="charts.jsp">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Charts</span></a>
@@ -355,102 +355,61 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-1 text-gray-800">Color Utilities</h1>
-          <p class="mb-4">Bootstrap's default utility classes can be found on the official <a href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities below were created to extend this theme past the default utility classes built into Bootstrap's framework.</p>
+          <h1 class="h3 mb-2 text-gray-800">Charts</h1>
+          <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme. The charts below have been customized - for further customization options, please visit the <a target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js documentation</a>.</p>
 
           <!-- Content Row -->
           <div class="row">
 
-            <!-- First Column -->
-            <div class="col-lg-4">
+            <div class="col-xl-8 col-lg-7">
 
-              <!-- Custom Text Color Utilities -->
+              <!-- Area Chart -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Text Color Utilities</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
                 </div>
                 <div class="card-body">
-              
-                  <p class="text-gray-500 p-3 m-0">.text-gray-500</p>
-                  <p class="text-gray-600 p-3 m-0">.text-gray-600</p>
-                  <p class="text-gray-700 p-3 m-0">.text-gray-700</p>
-                  <p class="text-gray-800 p-3 m-0">.text-gray-800</p>
-                  <p class="text-gray-900 p-3 m-0">.text-gray-900</p>
+                  <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                  </div>
+                  <hr>
+                  Styling for the area chart can be found in the <code>/js/demo/chart-area-demo.js</code> file.
                 </div>
               </div>
 
-              <!-- Custom Font Size Utilities -->
+              <!-- Bar Chart -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Font Size Utilities</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
                 </div>
                 <div class="card-body">
-                 
-                  <p class="text-gray-500 p-3 m-0">.text-gray-500</p>
-                  <p class="text-gray-600 p-3 m-0">.text-gray-600</p>
-                  <p class="text-gray-700 p-3 m-0">.text-gray-700</p>
-                  <p class="text-gray-800 p-3 m-0">.text-gray-800</p>
-                  <p class="text-gray-900 p-3 m-0">.text-gray-900</p>
+                  <div class="chart-bar">
+                    <canvas id="myBarChart"></canvas>
+                  </div>
+                  <hr>
+                  Styling for the bar chart can be found in the <code>/js/demo/chart-bar-demo.js</code> file.
                 </div>
               </div>
 
             </div>
 
-            <!-- Second Column -->
-            <div class="col-lg-4">
-
-              <!-- Background Gradient Utilities -->
+            <!-- Donut Chart -->
+            <div class="col-xl-4 col-lg-5">
               <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Background Gradient Utilities</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
                 </div>
+                <!-- Card Body -->
                 <div class="card-body">
-   
-                  <div class="px-3 py-5 bg-gradient-warning text-white">.bg-gradient-warning</div>
-                  <div class="px-3 py-5 bg-gradient-danger text-white">.bg-gradient-danger</div>
-                  <div class="px-3 py-5 bg-gradient-light text-white">.bg-gradient-light</div>
-                  <div class="px-3 py-5 bg-gradient-dark text-white">.bg-gradient-dark</div>
+                  <div class="chart-pie pt-4">
+                    <canvas id="myPieChart"></canvas>
+                  </div>
+                  <hr>
+                  Styling for the donut chart can be found in the <code>/js/demo/chart-pie-demo.js</code> file.
                 </div>
               </div>
-
             </div>
-
-            <!-- Third Column -->
-            <div class="col-lg-4">
-
-              <!-- Grayscale Utilities -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Grayscale Background Utilities</h6>
-                </div>
-                <div class="card-body">
-        
-                  <div class="p-3 bg-gray-500 text-white">.bg-gray-500</div>
-                  <div class="p-3 bg-gray-600 text-white">.bg-gray-600</div>
-                  <div class="p-3 bg-gray-700 text-white">.bg-gray-700</div>
-                  <div class="p-3 bg-gray-800 text-white">.bg-gray-800</div>
-                  <div class="p-3 bg-gray-900 text-white">.bg-gray-900</div>
-                </div>
-              </div>
-              
-               <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Grayscale Background Utilities</h6>
-                </div>
-                <div class="card-body">
-      
-                  <div class="p-3 bg-gray-500 text-white">.bg-gray-500</div>
-                  <div class="p-3 bg-gray-600 text-white">.bg-gray-600</div>
-                  <div class="p-3 bg-gray-700 text-white">.bg-gray-700</div>
-                  <div class="p-3 bg-gray-800 text-white">.bg-gray-800</div>
-                  <div class="p-3 bg-gray-900 text-white">.bg-gray-900</div>
-                </div>
-              </div>
-              
-            </div>
-            
-            
-
           </div>
 
         </div>
@@ -508,6 +467,14 @@
 
   <!-- Custom scripts for all pages-->
   <script src="../resources/maincss/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../resources/maincss/vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="../resources/maincss/js/demo/chart-area-demo.js"></script>
+  <script src="../resources/maincss/js/demo/chart-pie-demo.js"></script>
+  <script src="../resources/maincss/js/demo/chart-bar-demo.js"></script>
 
 </body>
 
