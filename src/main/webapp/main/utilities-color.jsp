@@ -23,7 +23,19 @@
   <link href="../resources/maincss/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
-
+<style type="text/css">
+.container-fluidkyu{
+width:1000px;
+height:300px;
+white-space:nowrap;
+overflow-x:scroll;
+}
+.row2 {
+	
+	display: inline-block;
+	
+}
+</style>
 <body id="page-top">
 <!-- 테스트버튼 시작 -->
 <div style="position:absolute;z-index:5;"><br>&nbsp;
@@ -40,10 +52,27 @@
     <button onclick="javascript:location.href='tables.jsp'">tables</button>
     <button onclick="javascript:location.href='utilities-animation.jsp'">utilities-animation</button>
     <button onclick="javascript:location.href='utilities-border.jsp'">utilities-border</button>
-    <button onclick="javascript:location.href='utilities-color.jsp'">utilities-color</button>
+    <button onclick="javascript:location.href='utilities-color.jsp'">파일함</button>
     <button onclick="javascript:location.href='utilities-other.jsp'">utilities-other</button>
     </div>
 <div style="background-color:#F8E0E6;border:2px solid black;"><br><br><br></div>
+
+<style type="text/css">
+.parent{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+}
+
+.first {
+ width:200px; height:100px; border:1px solid; float:left; margin-right:20px;
+}
+
+.second{
+  width:200px; height:100px; border:1px solid; float:left;
+}
+
+</style>
 <!-- 테스트버튼 끝 -->
   <!-- Page Wrapper -->
   <div id="wrapper">
@@ -101,7 +130,7 @@
         <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item active" href="utilities-color.jsp">Colors</a>
+            <a class="collapse-item active" href="utilities-color.jsp">파일함</a>
             <a class="collapse-item" href="utilities-border.jsp">Borders</a>
             <a class="collapse-item" href="utilities-animation.jsp">Animations</a>
             <a class="collapse-item" href="utilities-other.jsp">Other</a>
@@ -355,11 +384,12 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-1 text-gray-800">Color Utilities</h1>
-          <p class="mb-4">Bootstrap's default utility classes can be found on the official <a href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities below were created to extend this theme past the default utility classes built into Bootstrap's framework.</p>
+          <h1 class="h3 mb-1 text-gray-800">파일함</h1>
+          <p class="mb-4"><a href="https://getbootstrap.com/docs"></a></p>
+          <br>
 
           <!-- Content Row -->
-          <div class="row">
+         <div class="row"> 
 
             <!-- First Column -->
             <div class="col-lg-4">
@@ -367,22 +397,30 @@
               <!-- Custom Text Color Utilities -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Text Color Utilities</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">이미지</h6>
                 </div>
                 <div class="card-body">
-              
-                  <p class="text-gray-500 p-3 m-0">.text-gray-500</p>
-                  <p class="text-gray-600 p-3 m-0">.text-gray-600</p>
-                  <p class="text-gray-700 p-3 m-0">.text-gray-700</p>
-                  <p class="text-gray-800 p-3 m-0">.text-gray-800</p>
-                  <p class="text-gray-900 p-3 m-0">.text-gray-900</p>
+              		  <div class="parent">
+                  	<div class="first">photo</div>
+        			<div class="second">photo</div>
+        			</div>
+        			
+        			  <div class="parent">
+                  	<div class="first">photo</div>
+        			<div class="second">photo</div>
+        			</div>
+        			
+        			  <div class="parent">
+                  	<div class="first">photo</div>
+        			<div class="second">photo</div>
+        			</div>
                 </div>
               </div>
 
               <!-- Custom Font Size Utilities -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Font Size Utilities</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">동영상</h6>
                 </div>
                 <div class="card-body">
                  
@@ -402,7 +440,7 @@
               <!-- Background Gradient Utilities -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Background Gradient Utilities</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">문서</h6>
                 </div>
                 <div class="card-body">
    
@@ -421,7 +459,7 @@
               <!-- Grayscale Utilities -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Grayscale Background Utilities</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">압축파일</h6>
                 </div>
                 <div class="card-body">
         
@@ -435,7 +473,7 @@
               
                <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Grayscale Background Utilities</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">기타</h6>
                 </div>
                 <div class="card-body">
       
@@ -448,12 +486,12 @@
               </div>
               
             </div>
-            
-            
+           
+        
 
           </div>
 
-        </div>
+        </div> 
         <!-- /.container-fluid -->
 
       </div>
