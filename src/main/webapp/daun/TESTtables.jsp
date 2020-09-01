@@ -25,6 +25,83 @@
   <!-- Custom styles for this page -->
   <link href="../resources/maincss/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+<script type="text/javascript">
+$(function () {
+
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+    $("ul.tabs li").click(function () {
+        $("ul.tabs li").removeClass("active").css("color", "#333");
+        //$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
+        $(this).addClass("active").css("color", "darkred");
+        $(".tab_content").hide()
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn()
+    });
+});
+</script>
+<style type="text/css">
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 32px;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    width: 100%;
+    font-family:"dotum";
+    font-size:12px;
+}
+ul.tabs li {
+    float: left;
+    text-align:center;
+    cursor: pointer;
+    width:82px;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #eee;
+    border-left: none;
+    font-weight: bold;
+    background: #fafafa;
+    overflow: hidden;
+    position: relative;
+}
+ul.tabs li.active {
+    background: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+.tab_container {
+    border: 1px solid #eee;
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 248px;
+    background: #FFFFFF;
+}
+.tab_content {
+    padding: 5px;
+    font-size: 12px;
+    display: none;
+}
+.tab_container .tab_content ul {
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+.tab_container .tab_content ul li {
+    padding:5px;
+    list-style:none
+}
+;
+ #container {
+    width: 249px;
+    margin: 0 auto;
+}
+
+</style>
 </head>
 
 <body id="page-top">
@@ -362,6 +439,39 @@
           <!-- Page Heading -->
           <h1 class="h3 mb-2 text-gray-800">Tables</h1>
           <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
+
+<div id="container">
+    <ul class="tabs">
+        <li class="active" rel="tab1">공지사항</li>
+        <li rel="tab2">구매랭킹</li>
+        <li rel="tab3">공지사항</li>
+    </ul>
+    <div class="tab_container">
+        <div id="tab1" class="tab_content">
+            <ul>
+                <li><a href="#">이것은 두 번째 탭의</a>
+                </li>
+                <li><a href="#">이것은 두 번째 탭의</a>
+                </li>
+                <li><a href="#">이것은 두 번째 탭의</a>
+                </li>
+                <li><a href="#">이것은 두 번째 탭의</a>
+                </li>
+                <li><a href="#">이것은 두 번째 탭의</a>
+                </li>
+            </ul>
+        </div>
+        <!-- #tab1 -->
+        <div id="tab2" class="tab_content">2222Mortal Kombat returns after a lengthy hiatus and puts players back into the Tournament for 2D fighting with gruesome combat.</div>
+        <!-- #tab2 -->
+        <div id="tab3" class="tab_content">3333Halo: Reach is the culmination of the superlative combat, sensational multiplayer, and seamless online integration that are the hallmarks of this superb series.</div>
+        <!-- #tab3 -->
+    </div>
+    <!-- .tab_container -->
+</div>
+<!-- #container -->
+
+
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
