@@ -73,7 +73,7 @@
 	<!-- <interceptors>
 		<interceptor>
 			<mapping path="/**" />
-			<beans:bean id="loggerInterceptor" class="com.kh.second.common.interceptor.LoggerInterceptor" />
+			<beans:bean id="loggerInterceptor" class="com.beet.HWABO.common.interceptor.LoggerInterceptor" />
 		</interceptor>
 		로그인 체크용 인터셉터 등록
 		<interceptor>
@@ -83,7 +83,7 @@
 			스프링 3.2 부터 exclude-mappin 앨리먼트 사용할 수 있음
 			<exclude-mapping path="/board/blist.do" />
 			<mapping path="/board/blist.do" />
-			<beans:bean id="loginCheckInterceptor" class="com.kh.second.common.interceptor.LoginCheckInterceptor" />
+			<beans:bean id="loginCheckInterceptor" class="com.beet.HWABO.common.interceptor.LoginCheckInterceptor" />
 		</interceptor>
 	</interceptors> -->
 	
