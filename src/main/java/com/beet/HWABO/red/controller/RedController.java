@@ -43,7 +43,7 @@ public class RedController {
 	@RequestMapping(value = "plz.do", method = RequestMethod.GET)
 	public String plzIndex(Model model) {
 		
-		return "yeongmin/index";
+		return "plz/index";
 	}
 	@RequestMapping(value = "sample.do", method = RequestMethod.GET)
 	public String sampleIndex(Model model) {

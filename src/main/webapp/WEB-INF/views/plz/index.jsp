@@ -42,6 +42,9 @@
     <button onclick="javascript:location.href='fborder.do'">utilities-border</button>
     <button onclick="javascript:location.href='fcolor.do'">utilities-color</button>
     <button onclick="javascript:location.href='fother.do'">utilities-other</button>
+    <button onclick="javascript:location.href='insertvp.do'">투표</button>
+    <button onclick="javascript:location.href='insertchat.do'">채팅하기</button>
+    <button onclick="javascript:location.href='selectal.do'">utilities-other</button>
     </div>
 <div style="background-color:#F8E0E6;border:2px solid black;"><br><br><br></div>
 <!-- 테스트버튼 끝 -->
